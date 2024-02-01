@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./js/home.js" defer></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="sign-in-and-cart">
+            <div class="sign-in">
+                <p>Hi, anonymous.</p>
+                <a href="sign-in.html">Sign in</a>
+            </div>
+            <div class="cart">
+                <a href="" onmouseover="show()" onmouseleave="hide()">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+                <div class="cart-product" onmouseover="show()" onmouseleave="hide()">
+                    <img id="toggleImg" src="./images/empty-cart.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <img src="./images/spring-high-resolution-logo-transparent (1).png" alt="">
+    </div>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active">Home</a>
+        <a href="products.html">New Arrivals</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa-solid fa-bars"></i>
+        </a>
+    </div>
+    <div class="home">
+        <div class="flex" id="flex1">
+            <h1>We offer the best Samsung products</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur suscipit qui corporis
+                dolorem vero voluptatem unde eos voluptate voluptatibus?</p>
+            <button>
+                <a href="#flex2">Find out more!</a>
+            </button>
+        </div>
+        <div class="flex" id="flex2">
+            <h1>We got what you need!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur suscipit qui corporis
+                dolorem vero voluptatem unde eos voluptate voluptatibus?</p>
+            <button>
+                <a href="#flex3">Find out more!</a>
+            </button>
+        </div>
+        <div class="flex" id="flex3">
+            <h1>Always at your service!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita consectetur suscipit qui corporis
+                dolorem vero voluptatem unde eos voluptate voluptatibus?</p>
+            <button>
+                <a href="#flex1">Find out more!</a>
+            </button>
+        </div>
+        <div class="flex" id="flex4">
+            <h1>About us</h1>
+            <p>Contact us at www.comp</p>
+            <p>(+84) 66 888 6868</p>
+            <p>or Visit us at MindX HDT Hanoi</p>
+            <div class="app">
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

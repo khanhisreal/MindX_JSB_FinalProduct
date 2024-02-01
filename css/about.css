@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'Samsung';
+    src: url(../font/SamsungSans-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'Samsung thin';
+    src: url(../font/SamsungSans-Thin.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    height: 150px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    height: 100px;
+}
+
+.header .sign-in-and-cart {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    top: 0px;
+    z-index: 20;
+}
+
+.header .sign-in-and-cart .sign-in p {
+    width: 150px;
+    margin-bottom: 0px;
+}
+
+.header .sign-in-and-cart .sign-in a {
+    text-decoration: none;
+    color: lightcyan;
+    width: 100px;
+}
+
+.header .sign-in-and-cart .cart {
+    position: relative;
+}
+
+.header .sign-in-and-cart .cart i {
+    color: lightcyan;
+}
+
+.header .sign-in-and-cart .cart .cart-product {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border: 1px solid;
+    display: none;
+}
+
+.header .sign-in-and-cart .cart .cart-product img {
+    width: 100%;
+    height: 100%;
+}
+
+
+.cart-product .products .product {
+    display: flex;
+}
+
+.topnav {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.topnav a {
+    display: block;
+    padding: 14px 17px;
+    float: left;
+    color: royalblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.topnav a.icon {
+    /* hidden by default */
+    display: none;
+}
+
+.information {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.information .tab {
+    width: 19%;
+    height: auto;
+    background-color: lavender;
+}
+
+.information .tab button {
+    font-family: 'Times New Roman', Times, serif;
+    color: purple;
+    font-size: 100%;
+    display: block;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    background-color: inherit;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    outline: none;
+}
+
+.information .tab button:hover {
+    background-color: lightcyan;
+    color: black;
+}
+
+.information .tab button.active {
+    background-color: plum;
+    color: purple;
+}
+
+.information .container {
+    width: 81%;
+    background-color: lavenderblush;
+}
+
+.information .container div:not(:first-child) {
+    display: none;
+}
+
+.information .container img {
+    width: 60%;
+    display: block;
+    padding: 20px;
+    border-radius: 40px;
+    margin: auto;
+}
+
+.information .container .tabcontent {
+    padding: 20px;
+}
+
+.information .container .tabcontent h1 {
+    padding: 0px 20px;
+    font-family: 'Samsung';
+    font-size: 170%;
+    color: darkred;
+}
+
+.information .container .tabcontent span {
+    display: block;
+    padding: 5px 20px;
+}
+
+.home .flex {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.home #flex4 {
+    background-color: darkred;
+}
+
+.home .flex h1 {
+    margin-bottom: 10px;
+}
+
+.home .flex button {
+    background-color: darkred;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 10px;
+}
+
+.home .flex button a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home .flex .app {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.home .flex .app i {
+    color: white;
+    padding: 0px 20px;
+}
+
+.home .flex h1,
+p {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:nth-child(4)) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive {
+        position: relative;
+        position: sticky;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .information .tabcontent h1 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .information .tab {
+       width: 100px;
+    }
+}

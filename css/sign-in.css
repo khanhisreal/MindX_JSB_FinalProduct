@@ -1,0 +1,140 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, lightcoral, lightpink);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+fieldset {
+    padding: 50px 50px;
+    background-color: white;
+    border: 0px;
+    border-radius: 5px;
+    width: 20vw;
+}
+
+fieldset h1 {
+    margin-bottom: 20px;
+}
+
+fieldset input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+.password {
+    position: relative;
+}
+
+.password .eyes {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: block;
+    color: gray;
+}
+
+#submit {
+    display: block;
+    background-color: orangered;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 17px;
+    margin-bottom: -10px;
+}
+
+#submit:hover {
+    background-color: darkorange;
+    transition-duration: 0.2s;
+}
+
+#forgotPassword {
+    text-decoration: none;
+    color: gray;
+}
+
+.text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.line {
+    content: "";
+    background-color: grey;
+    /* Adjust color as needed */
+    width: 50%;
+    /* Adjust width as needed */
+    height: 1px;
+    /* Adjust spacing as needed */
+}
+
+span {
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+    color: gray;
+}
+
+.alternatives {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.alternatives div {
+    width: 47%;
+}
+
+.alternatives div a {
+    color: black;
+    text-decoration: none;
+    display: block;
+    background-color: lightgrey;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.alternatives div a i {
+    margin-right: 10px;
+}
+
+.fa-facebook {
+    color: rgb(68, 68, 171);
+}
+
+.fa-google {
+    color: #4285f4;
+}
+
+.fa-google::before {
+    color: #ea4335;
+}
+
+@media screen and (max-width: 500px) {
+    .form-sign-in fieldset {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 2150px) {
+     fieldset {
+        width: 450px;
+    }
+}

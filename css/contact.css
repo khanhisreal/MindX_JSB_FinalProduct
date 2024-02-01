@@ -1,0 +1,371 @@
+@font-face {
+    font-family: 'Samsung thin';
+    src: url(../font/SamsungSans-Thin.ttf);
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    height: 150px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    height: 100px;
+}
+
+.header .sign-in-and-cart {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    top: 0px;
+    z-index: 20;
+}
+
+.header .sign-in-and-cart .sign-in p {
+    width: 150px;
+    margin-bottom: 0px;
+}
+
+.header .sign-in-and-cart .sign-in a {
+    text-decoration: none;
+    color: lightcyan;
+    width: 100px;
+}
+
+.header .sign-in-and-cart .cart {
+    position: relative;
+}
+
+.header .sign-in-and-cart .cart i {
+    color: lightcyan;
+}
+
+.header .sign-in-and-cart .cart .cart-product {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border: 1px solid;
+    display: none;
+}
+
+.header .sign-in-and-cart .cart .cart-product img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-product .products .product {
+    display: flex;
+}
+
+.topnav {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.topnav a {
+    display: block;
+    padding: 14px 17px;
+    float: left;
+    color: royalblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.topnav a.icon {
+    /* hidden by default */
+    display: none;
+}
+
+.email {
+    background-color: #E6E6E6;
+    text-align: center;
+}
+
+.email img {
+    width: 30%;
+}
+
+.contact-form {
+    background-image: linear-gradient(to right, lightcyan, lightcoral);
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Samsung thin';
+    text-transform: uppercase;
+}
+
+.contact-form h1 {
+    margin-bottom: 30px;
+    text-shadow: 1px 1px black;
+    color: white;
+}
+
+.contact-form .container {
+    position: relative;
+    width: 20vw;
+    margin: auto;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 15px;
+    border-radius: 5px;
+    border: 2px;
+}
+
+.contact-form .container i {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    color: black;
+}
+
+.q-and-a {
+    padding: 50px;
+    background-color: aliceblue;
+    font-family: 'Samsung thin';
+    font-weight: bold;
+    font-size: 70%;
+    height: auto;
+}
+
+.q-and-a .heading {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.q-and-a .heading p {
+    font-size: 130%;
+    position: absolute;
+    left: 0;
+}
+
+.q-and-a .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.q-and-a .container .items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.q-and-a .container .item {
+    width: 26%;
+    height: 20%;
+}
+
+.q-and-a .container .item a {
+    font-size: 130%;
+    text-decoration: none;
+    color: black;
+    display: block;
+    line-height: 50px;
+}
+
+.q-and-a .container .item:nth-child(4),
+.q-and-a .container .item:nth-child(5),
+.q-and-a .container .item:nth-child(6) {
+    margin-top: 40px;
+}
+
+.contact-us {
+    margin-top: 50px;
+}
+
+.contact-us .heading {
+    padding-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+    text-transform: uppercase;
+}
+
+.contact-us .parent {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.contact-us .child {
+    text-align: center;
+}
+
+.contact-us .child i {
+    font-size: 450%;
+    margin-bottom: 20px;
+}
+
+.contact-us .child h1 {
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+
+.contact-us .child p {
+    font-size: 130%;
+    font-family: 'Samsung thin';
+    text-align: center;
+    width: 15vw;
+}
+
+.home .flex {
+    width: 100%;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.home #flex4 {
+    background-color: darkred;
+}
+
+.home .flex h1 {
+    margin-bottom: 10px;
+}
+
+.home .flex button {
+    background-color: darkred;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 10px;
+}
+
+.home .flex button a {
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home .flex .app {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.home .flex .app i {
+    color: white;
+    padding: 0px 20px;
+}
+
+.home .flex h1,
+p {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .contact-form .container {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .email img {
+        width: 50%;
+    }
+
+    .q-and-a .container .items {
+        display: block;
+    }
+
+    .q-and-a .container .items .item {
+        width: 40vw;
+        margin-top: 20px;
+    }
+
+    .contact-us .parent {
+        display: block
+    }
+
+    .contact-us .child {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .contact-us .child p {
+        width: 80%;
+    }
+
+    .contact-form .container {
+        width: 50vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:nth-child(3)) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive {
+        position: relative;
+        position: sticky;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .q-and-a .heading {
+        border-bottom: 0px;
+    }
+
+    .q-and-a .container .items {
+        width: 100%;
+    }
+
+    .q-and-a .container .items .item {
+        width: 100%;
+    }
+}

@@ -1,0 +1,203 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    height: 150px;
+    background-color: lightcoral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.header img {
+    height: 100px;
+}
+
+.header .sign-in-and-cart {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    top: 0px;
+}
+
+.header .sign-in-and-cart .sign-in p {
+    width: 150px;
+    margin-bottom: 0px;
+}
+
+.header .sign-in-and-cart .sign-in a {
+    text-decoration: none;
+    color: lightcyan;
+    width: 100px;
+}
+
+.header .sign-in-and-cart .cart {
+    position: relative;
+}
+
+.header .sign-in-and-cart .cart i {
+    color: lightcyan;
+}
+
+.header .sign-in-and-cart .cart .cart-product {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 10;
+    width: 400px;
+    height: auto;
+    background-color: white;
+    border: 1px solid;
+    display: none;
+}
+
+.header .sign-in-and-cart .cart .cart-product img {
+    width: 100%;
+    height: 100%;
+}
+
+.cart-product .products .product {
+    display: flex;
+}
+
+.topnav {
+    background-color: antiquewhite;
+    position: sticky;
+    top: 0px;
+    overflow: hidden;
+}
+
+.topnav a {
+    display: block;
+    padding: 14px 17px;
+    float: left;
+    color: royalblue;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: royalblue;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: cornflowerblue;
+    color: white;
+}
+
+.topnav a.icon {
+    /* hidden by default */
+    display: none;
+}
+
+.home .flex {
+    width: 100%;
+}
+
+.home .flex:not(:last-child) {
+    padding: 150px 150px;
+    text-align: center;
+}
+
+.home .flex:last-child {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.home #flex1 {
+    background-color: bisque;
+}
+
+.home #flex2 {
+    background-color: burlywood;
+}
+
+.home #flex3 {
+    background-color: lightpink;
+}
+
+.home #flex4 {
+    background-color: darkred;
+}
+
+.home .flex h1{
+    margin-bottom: 10px;
+}
+
+.home .flex button {
+    background-color: darkred;
+    padding: 5px;
+    border-radius: 5px;
+    border: 0px;
+    margin-top: 10px;
+}
+
+.home .flex button a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.home .flex .app {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.home .flex .app i {
+    color: white;
+    padding: 0px 20px;
+}
+
+.home .flex h1,
+p {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        display: block;
+        float: right;
+    }
+
+    .topnav.responsive {
+        position: relative;
+        position: sticky;
+    }
+
+    .topnav.responsive a.icon {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+
+    .topnav.responsive a {
+        display: block;
+        float: none;
+        text-align: left;
+    }
+
+    .flex h1, p {
+        width: 110%;
+    }
+}
